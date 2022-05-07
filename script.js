@@ -41,7 +41,7 @@ let viewXML = (xmlDocument) => {
       document.getElementById('getRssField').insertAdjacentHTML('beforeend',tagString );
   }
 };
-const URL = 'https://newsdig.tbs.co.jp/list/feed/rss/rss4media?mediaid=rbc';
+const URL = '';
 fetch(URL)
 .then( response => response.text())
 .then( xmlData => viewXML(xmlData));
